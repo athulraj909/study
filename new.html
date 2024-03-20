@@ -1,11 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div1{
+      height: 250px;
+      width: 150px;
+      border-radius: 5%;
+      background-color: aqua;
+      z-index: 2;
+      bottom: 100px;
+      position: absolute; /* Position div1 absolutely */
+    }
+    .div2{
+      height: 350px;
+      width: 150px;
+      background-color: rgb(17, 255, 0);
+      position: relative; /* Position div2 relatively */
+      z-index: 1;
+      border-radius: 5%;
+    }
+
+    .div3{
+      height: 150px;
+      width: 150px;
+      background-color: black;
+      border-radius: 5%;
+    }
+    .div4{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(127, 51, 51);
+      border-radius: 5%;
+      position: absolute;
+      top: 30px;
+    }
+
+    .div5{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(51, 127, 109);
+      border-radius: 5%;
+    }
+
+    .div6{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(98, 51, 127);
+      border-radius: 5%;
+      position: absolute;
+      top: 30px;
+    }
+
+    .div7{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(75, 127, 51);
+      border-radius: 5%;
+    }
+
+    .div8{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(211, 53, 14);
+      border-radius: 5%;
+      position: absolute;
+      top: 30px;
+    }
+
+    
+    .div9{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(21, 231, 157);
+      border-radius: 5%;
+    }
+
+    .div10{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(14, 185, 211);
+      border-radius: 5%;
+      position: absolute;
+      top: 30px;
+    }
+
+    .div11{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(231, 231, 21);
+      border-radius: 5%;
+    }
+
+    .div12{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(211, 14, 185);
+      border-radius: 5%;
+      position: absolute;
+      top: 30px;
+    }
+
+    .div13{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(231, 158, 21);
+      border-radius: 5%;
+    }
+
+    .div14{
+      height: 150px;
+      width: 150px;
+      background-color: rgb(211, 103, 14);
+      border-radius: 5%;
+      position: absolute;
+      top: 30px;
+    }
+  </style>
 </head>
 <body>
-
+  <div style="background-color: darkblue;width: 80%;margin: auto;z-index: -1;">
+    <div style="display: flex;gap: 10px;padding: 5%;width: 80%;margin: auto;">
+      <div style="position: relative;">
+        <div class="div2"></div> <!-- Swap div1 and div2 -->
+        <div class="div1"></div> <!-- Swap div1 and div2 -->
+      </div>
+      <div>
+        <div style="display: flex;gap: 10px;">
+          <div style="position: relative;">
+            <div class="div3"></div>
+            <div class="div4"></div>
+          </div>
+          <div style="position: relative;">
+            <div class="div5"></div>
+            <div class="div6"></div>
+          </div>
+          <div style="position: relative;">
+            <div class="div7"></div>
+            <div class="div8"></div>
+          </div>
+        </div>
+        <div style="display: flex;margin-top:50px;gap: 10px;">
+          <div style="position: relative;">
+            <div class="div9"></div>
+            <div class="div10"></div>
+          </div>
+          <div style="position: relative;">
+            <div class="div11"></div>
+            <div class="div12"></div>
+          </div>
+          <div style="position: relative;">
+            <div class="div13"></div>
+            <div class="div14"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,35 +1,42 @@
-# numtexters = [4, 2, 6, 7, 3, 5, 8, 10, 6, 1, 9, 2]  
+# numbers = [4, 2, 6, 7, 3, 5, 8, 10, 6, 1, 9, 2]  
 # square = 0  
 # squares = []  
-# for value in numtexters:  
+# for value in numbers:  
 #   square = value ** 2  
 #   squares.append(square)  
 # print("The list of squares is", squares)  
 
-# fruits = ["apple", "textanana", "cherry"]
+
+
+# fruits = ["apple", "banana", "cherry"]
 # for x in fruits:
 #   print(x)
-#   if x == "textanana":
-#     textreak
+#   if x == "banana":
+#     break
 
 
 # n=5
 # for i in range(0,n):
 #     if i%2==0:
-
 #         print(i)
+
+
 
 # n=5
 # for i in range(0,n):
 #     if i%2!=0:
 #         print(i)
 
+
+
 # string = "Python Loop"  
 # for s in  string:  
 #         if s == "o":  
-#             print("If textlock")  
+#             print("If block")  
 #         else:  
 #             print(s)  
+
+
 
 # tuple_ = ("Python", "Loops", "Sequence", "Condition", "Range")  
 # for iterator in range(len(tuple_)):  
@@ -37,11 +44,15 @@
 
 
 
-# n=str(input("enter the word : "))
+
+
+# n="python loop"
 # for string in n:
 #   if string == "o" or string == "p" or string == "t":
 #     continue  
 #   print('Current Letter:', string)  
+
+
 
 
 # for string in "Python Loops":
@@ -49,43 +60,67 @@
 #     continue  
 #   print('Current Letter:', string)  
 
+
+
 # for string in "Python Loops":  
 #   if string == 'L':  
-#     textreak  
+#     break  
 #   print('Current Letter: ', string)  
+
+
 
 # print(range(15))  
 # print(list(range(15)))  
 # print(list(range(4, 9)))  
 # print(list(range(5, 25, 5)))   
 
+
+
 # for  string in "Python Loops":  
-#   pass  
+#     pass
 # print( 'Last Letter:', string)   
 
 
-# program to calculate the sum of numtexters
+
+# tuple_ = ("Python", "Loops", "Sequence", "Condition", "Range")
+# uppercase_list=[]  
+# for iterator in range(len(tuple_)): 
+#     uppercase_list.append(tuple_[iterator].upper()) 
+# print(uppercase_list)  
+# print(range(len(tuple_)))
+
+
+
+# program to calculate the sum of numbers
 # until the user enters zero
 
 
 
 
 
-
+# a="python"
+# print(len(a))
 
 
 
 # While
 
 
-
-
 # counter = 0  
 # while counter < 10: 
-#     counter = counter + 3 
+#     counter = counter + 3
 #     print("Python Loops") 
 
 
+
+
+    
+# count = 1
+# while count <= 5:
+#     print(count)
+#     count += 1
+# else:
+#     print("Loop completed successfully")
 
 
 
@@ -94,6 +129,9 @@
 # while i <= n:
 #     print(i)
 #     i = i + 1
+
+
+
 
 
 
@@ -124,7 +162,7 @@
 # while i < 6:
 #   print(i)
 #   if i == 3:
-#     textreak
+#     break
 #   i += 1
 
 
@@ -144,7 +182,7 @@
 # while i < len(a):
 #     if a[i] == 'o' or a[i] == 't':
 #         i += 1
-#         textreak
+#         break
          
 #     print('Current Letter :', a[i])
 #     i += 1
@@ -155,22 +193,24 @@
  
 # while i < len(a):
 #     i += 1
+
 #     pass
-   
+ 
 # print('Value of i :', i)
 
 
-# a = int(input('Enter a numtexter (-1 to quit): '))
 
+
+
+# a = int(input('Enter a number (-1 to quit): '))
 # while a != -1:
-# 	a = int(input('Enter a numtexter (-1 to quit): '))
+# 	a = int(input('Enter a number (-1 to quit): '))
 
-# n = int(input("Enter the numtexter: "))
+
+
 
 
 # Generate the upper part of the pattern
-
-
 
 
 # a = [1, 2, 3, 4]
@@ -181,10 +221,10 @@
 
 
 # total = 0
-# numtexter = int(input('Enter a numtexter: '))
-# while numtexter != 0:
-#     total += numtexter
-#     numtexter = int(input('Enter a numtexter: '))
+# number = int(input('Enter a number: '))
+# while number != 0:
+#     total += number
+#     number = int(input('Enter a number: '))
 # print('total =', total)
 
 
@@ -196,8 +236,8 @@
 
 
 
-# l=int(input("enter"))
-# m=int(input("enter"))
+# l=int(input("enter the number : "))
+# m=int(input("enter the range : "))
 # print("prime numbers are:")
 # for i in range(l,m+1):
 #     if i>1:
@@ -209,6 +249,29 @@
 
 
 
+
+
+
+# num = int(input("Enter the Number : "))
+# # If given number is greater than 1
+# if num > 1:
+#     # Iterate from 2 to n / 2
+#     for i in range(2, int(num/2)+1):
+#         # If num is divisible by any number between
+#         # 2 and n / 2, it is not prime
+#         if (num % i) == 0:
+#             print(num, "is not a prime number")
+#             break
+#     else:
+#         print(num, "is a prime number")
+# else:
+#     print(num, "is not a prime number")
+
+
+
+
+
+
 # List = [character for character in [1, 2, 3]]
 # print(List)
 
@@ -216,25 +279,27 @@
 # print(List)
 
 
-# Numtexter of rows
+
+
+# # Number of rows
 # r = 5
 
-# Upper Triangles
+# # Upper Triangles
 # for i in range(1, r+1):
-#     print("* "*i, end="")
-#     print("  "*(r-i)*2, end="")
+#     print("* "*i, end=" ")
+#     print("  "*(r-i)*2, end=" ")
 #     print("* "*i)
 
 # # Lower Triangles
 # for i in range(r,0,-1):
-#     print("* "*i, end="")
-#     print("  "*(r-i)*2, end="")
+#     print("* "*i, end=" ")
+#     print("  "*(r-i)*2, end=" ")
 #     print("* "*i) 
 
 
 
 
-# a=int(input("Enter the numtexter :"))
+# a=int(input("Enter the number :"))
 # b=str(input("Enter the name :"))
 # class Employee:  
 #     id = a
@@ -301,8 +366,8 @@
 # text1 = textank()  
 # text2 = StextI()  
 # text3 = ICICI()  
-# print("textank Rate of interest:",text1.getroi());  
-# print("StextI Rate of interest:",text2.getroi());  
+# print("bank Rate of interest:",text1.getroi());  
+# print("SBI Rate of interest:",text2.getroi());  
 # print("ICICI Rate of interest:",text3.getroi())
 
 
@@ -358,8 +423,8 @@
 
 # def square( num ):    
 #     return num**2     
-# otextject_ = square(6)    
-# print( "The square of the given numtexter is: ", otextject_ )
+# obtject_ = square(6)    
+# print( "The square of the given numtexter is: ", object_ )
     
 
 
@@ -374,11 +439,9 @@
 
 
 
-
-
 # def function( n1, n2 = 20 ):    
-#     print("numtexter 1 is: ", n1)    
-#     print("numtexter 2 is: ", n2)        
+#     print("number 1 is: ", n1)    
+#     print("number 2 is: ", n2)        
 # print( "Passing only one argument" )    
 # function(20)    
 
@@ -387,11 +450,11 @@
 # def square( num ):    
 #     return num**2    
 # print( "With return statement" )    
-# print( square( 52 ) )    
+# print( square( 8) )    
 
 
 
-# defualt argument
+# # defualt argument
 # def student(firstname, lastname ='Mark', standard ='Fifth'):
 # 	print(firstname, lastname, 'studies in', standard, 'Standard')
 
@@ -403,12 +466,12 @@
 
 # # 2 positional arguments 
 # student('John', 'Gates')				 
-# student('John', 'Seventh')
+# student('John','Seventh')
 
 
 
 
-# keyword argument
+# # keyword argument
 # def student(firstname, lastname ='Mark', standard ='Fifth'):
 # 	print(firstname, lastname, 'studies in', standard, 'Standard')
 
@@ -430,7 +493,7 @@
 #   print("His last name is " + x["lname"])
 #   print("His last name is " + x["fname"])
 
-# my_function(fname = "Totextias", lname = "Refsnes")
+# my_function(fname = "james", lname = "john")
 
 
 
@@ -439,12 +502,13 @@
 # def word():    
 #     string = 'Python functions tutorial'    
 #     x = 5     
-#     def numtexter():    
+#     def number():    
 #         print( string )   
 #         print( x )  
 
-#     numtexter()    
+#     number()    
 # word() 
+
 
 
 
@@ -459,11 +523,25 @@
 
 
 
-# lamtextda_ = lamtextda argument1, argument2: argument1 + argument2;    
+
+# #1
+# lambda_ = lambda argument1, argument2: argument1 + argument2
+# # Calling the function and passing values    
+# print( "Value of the function is : ", lambda_( 20,30 ) )    
+# print( "Value of the function is : ", lambda_( 40, 50 ) )    
+
+
+
+
+# #2
+# lambda_ = lambda argument1, argument2: argument1 + argument2;    
+
+# a = int(input("enter the number : "))
+# b = int(input(" enter the second number : "))
 
 # # Calling the function and passing values    
-# print( "Value of the function is : ", lamtextda_( 20, 30 ) )    
-# print( "Value of the function is : ", lamtextda_( 40, 50 ) )    
+# print( "Value of the function is : ", lambda_( a,b ) )    
+   
 
 
 
@@ -508,6 +586,7 @@
 #     a, b = 0, 1
 #     for i in range(n):
 #         series.append(a)
+       
 #         a, b = b, a + b
 #     return series
 
@@ -516,6 +595,21 @@
 # print("Fibonacci series of {} numbers: {}".format(n,d))
 
 
+
+# def fibonacci_series(n):
+#     series = []
+#     a, b = 0, 1
+#     for i in range(n):
+#         series.append(a)
+       
+#         temp_a = a
+#         a = b
+#         b = temp_a + b
+#     return series
+
+# n = int(input("Enter the number of Fibonacci numbers to generate: "))
+# d = fibonacci_series(n)
+# print("Fibonacci series of {} numbers: {}".format(n, d))
 
 
 
@@ -541,7 +635,7 @@
 # while True:
 #     print("Select operation:")
 #     print("1. Add")
-#     print("2. Sutexttract")
+#     print("2. Subtract")
 #     print("3. Multiply")
 #     print("4. Divide")
 #     print("5. Quit")
@@ -560,7 +654,7 @@
 #         print("addition of "+str(num1)+" and "+str(num2)+" is : ", result)
 #     elif choice == 2:
 #         result = subtract(num1, num2)
-#         print("subtraction of "+str(num1)+" and "+str(num2)+" is : ", result)
+#         print(f"subtraction of {num1} and {num2} is : {result}")
 #     elif choice == 3:
 #         result = multiply(num1, num2)
 #         print("multiply of "+str(num1)+" and "+str(num2)+" is : ", result)
@@ -656,11 +750,91 @@
 #         square()
         
 #     elif choice == 4:
-#         textreak
+#         break
 
 
 
 
+
+# def circle():
+#     r = int(input("Enter the radius: "))
+#     print("perimeter of circle is : ", 2 * 3.14 * r)
+
+# def rectangle():
+#     Height = int(input("Enter the Height: "))
+#     Width = int(input("Enter the Width: "))
+#     print("perimeter of rectangle is : ", 2 * (Height + Width))
+
+# def add_book():
+#     title = input("Enter the title of the book: ")
+#     author = input("Enter the author of the book: ")
+#     books[title] = author
+#     print("Book added successfully!")
+
+# def update_book():
+#     title = input("Enter the title of the book you want to update: ")
+#     if title in books:
+#         author = input("Enter the new author of the book: ")
+#         books[title] = author
+#         print("Book updated successfully!")
+#     else:
+#         print("Book not found!")
+
+# def delete_book():
+#     title = input("Enter the title of the book you want to delete: ")
+#     if title in books:
+#         del books[title]
+#         print("Book deleted successfully!")
+#     else:
+#         print("Book not found!")
+
+# def print_books():
+#     print("Books in the library:")
+#     for title, author in books.items():
+#         print(f"{title} by {author}")
+
+# books = {}
+
+# while True:
+#     print("Select operation:")
+#     print("1. Circle")
+#     print("2. Rectangle")
+#     print("3. Book Management")
+#     print("4. Quit")
+
+#     choice = int(input("Enter your choice: "))
+
+#     if choice == 1:
+#         circle()
+#     elif choice == 2:
+#         rectangle()
+#     elif choice == 3:
+#         while True:
+#             print("\nBook Management:")
+#             print("1. Add Book")
+#             print("2. Update Book")
+#             print("3. Delete Book")
+#             print("4. Print Books")
+#             print("5. Back to Main Menu")
+            
+#             book_choice = int(input("Enter your choice: "))
+            
+#             if book_choice == 1:
+#                 add_book()
+#             elif book_choice == 2:
+#                 update_book()
+#             elif book_choice == 3:
+#                 delete_book()
+#             elif book_choice == 4:
+#                 print_books()
+#             elif book_choice == 5:
+#                 break
+#             else:
+#                 print("Invalid choice. Please select a valid option.")
+#     elif choice == 4:
+#         break
+#     else:
+#         print("Invalid choice. Please select a valid option.")
 
 
 
@@ -669,6 +843,9 @@
 
 
 # Dictionary to store accounts and their balances
+
+
+
 # accounts = {}
 
 # def create_account(a, b):
@@ -776,7 +953,7 @@
 
 #     if choice == "4":
 #         print("Exiting the contact management system. Thank you!")
-#         textreak
+#         break
 
 #     if choice == "1":
 #         name = input("Enter contact name: ")
@@ -829,8 +1006,8 @@
 # 	def __init__(self):
 # 		print("Address of self = ",id(self))
 
-# otextj = check()
-# print("Address of class otextject = ",id(otextj))
+# obj = check()
+# print("Address of class object = ",id(obj))
 
 
 
@@ -1128,6 +1305,10 @@
 
 
 
+  
+
+
+
 # class Addition:
 # 	# parameterized constructor
 # 	def __init__(self, f, s):
@@ -1167,6 +1348,42 @@
 
 
 
+
+
+# Python program to 
+# demonstrate private members 
+
+# Creating a Base class 
+# class Base: 
+# 	def __init__(self): 
+# 		self.a = "hello"
+# 		self.__c = "world"
+# 		# print(self.__c)
+
+# class Derived(Base): 
+# 	def __init__(self): 
+# 		print("Calling private member of base class: ") 
+
+# 		Base.__init__(self) 
+# 		print(self.__c) 
+
+# Driver code 
+# obj1 = Base() 
+# print(obj1.__c)
+# print(obj1.a) 
+# obj2=Derived()
+# Uncommenting print(obj1.c) will 
+# raise an AttributeError 
+
+# Uncommenting obj2 = Derived() will 
+# also raise an AttributeError as 
+# private member of base class 
+# is called inside derived class 
+
+
+
+
+
 # class MyClass: 
 
 # 	# Hidden member of MyClass 
@@ -1176,7 +1393,7 @@
 # 	# __hiddenVariable 
 # 	def add(self, increment): 
 # 		self.__hiddenVariable += increment 
-# 		# print (self.__hiddenVariable) 
+# 		print (self.__hiddenVariable) 
 
 # # Driver code 
 # myObject = MyClass()	 
@@ -1186,6 +1403,148 @@
 # # This line causes error 
 # print (myObject.__hiddenVariable) 
 
+
+
+
+
+
+
+# def fun(a): 
+# 	if a < 4: 
+# 		# throws ZeroDivisionError for a = 3 
+# 		b = a/(a-3) 
+	 
+# 	print("Value of b = ", b) 
+# try: 
+# 	fun(3)  
+# # multiple exceptions 
+# except ZeroDivisionError: 
+# 	print("ZeroDivisionError Occurred and Handled") 
+
+
+
+
+# def my(a , b): 
+# 	try: 
+# 		c = ((a+b) / (a-b)) 
+# 	except ZeroDivisionError: 
+# 		print ("a/b result in 0") 
+# 	else: 
+# 		print (c) 
+# # Driver program to test above function 
+# my(2.0, 3.0) 
+# my(3.0, 3.0)
+
+
+
+
+# def fun(a):
+# 	try:
+# 		if a < 4:
+# 			b = a/(a-3)
+# 	except Exception as e:
+# 		print({e})
+# 	else:
+# 	    print("Value of b = ", b)   
+# fun(2)
+# fun(3)
+  
+
+
+
+	
+# try: 
+# 	raise NameError("Hi there") # Raise Error 
+# except NameError: 
+# 	print ("An exception") 
+# 	raise 
+
+
+
+
+
+# print(float(input("Enter the base number: ")) ** float(input("Enter the exponent: ")))
+
+
+
+
+# my_list = [1, 2, 3, 4, 5]
+# new_list = my_list[1:-1]
+# print(new_list)
+
+# [2, 3, 4]
+
+
+
+
+
+# nums = [1, 2, 3]
+# nums.append([4, 5])
+# print(len(nums))
+
+# [1, 2, 3, [4, 5]]
+# 4
+
+# arr = [2,4,2,5,7]
+
+# 4 > 2
+# 2 > 4
+
+
+# for x in reversed(arr):
+#     print(x)
+
+
+# n1 = int (input('enter a  value'))
+# n2 = int (input('enter a  value'))
+
+# sum = n1 + n2
+
+# print(sum)
+
+
+
+
+
+
+#     if x > arr[indesOfArry] :
+#         first = arr.index(x)
+#         first = arr[indesOfArry]
+   
+# for y in arr :
+
+
+
+# water bill
+# liters_used = int(input("Enter the liters : "))
+# total_bill = 0
+# if liters_used <= 100:
+#     total_bill = 15 * liters_used
+# if 100 < liters_used <= 200:
+#     total_bill = 15 * 100 + 14 * (liters_used - 100)
+# if liters_used > 200:
+#     total_bill = 15 * 100 + 14 * 100 + 12 * (liters_used - 200)
+# print("Total Water Bill:", total_bill)
+
+
+
+
+
+# list1 = input("Enter elements of the first list separated by spaces: ").split()
+# list2 = input("Enter elements of the second list separated by spaces: ").split()
+
+# # Convert input lists to sets for easier intersection operation
+# set1 = set(list1)
+# set2 = set(list2)
+
+# # Find the common elements between the two sets
+# common_elements = set1.intersection(set2)
+
+# # Display the common elements
+# if common_elements:
+#     print(f"Common elements: {list(common_elements)}")
+# else:
+#     print("No common elements.")
 
 
 

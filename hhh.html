@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            
+            body {
+            margin: 0;
+            font-family: Arial;
+            }
+            .heading{
+                text-align: center;
+                padding: 10px;
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 2px;
+            }
+            .column{
+                max-width: 25%;
+                /* padding: 2px; */
+                flex: 25%;
+                padding: 0 4px;
+            }
+            .column img{
+                vertical-align: middle;
+                margin-top: 5px;
+            
+
+             
+            }
+            @media screen and (max-width: 800px){
+                .column{
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+            @media screen and (max-width: 600px){
+                .column{
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+<body>
+        <div class="heading">
+            <h1>
+                Responsive Image Grid 
+            </h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="img-3.png" alt="grid1" style="width:100%">
+                <img src="img-9.png" alt="grid2" style="width:100%">
+                <img src="img-3.png" alt="grid3"style="width:100%">
+                <img src="img-9.png" alt="grid4" style="width:100%">
+                <img src="img-3.png" alt="grid5" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img-9.png" alt="grid3" style="width:100%">
+                <img src="img-3.png" alt="grid4" style="width:100%">
+                <img src="img-9.png" alt="grid2" style="width:100%">
+                <img src="img-3.png" alt="grid5" style="width:100%">
+                <img src="img-9.png" alt="grid1" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img-3.png" alt="grid1" style="width:100%">
+                <img src="img-9.png" alt="grid2" style="width:100%">
+                <img src="img-3.png" alt="grid3" style="width:100%">
+                <img src="img-9.png" alt="grid4" style="width:100%">
+                <img src="img-3.png" alt="grid5" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img-9.png" alt="grid3" style="width:100%">
+                <img src="img-3.png" alt="grid4" style="width:100%">
+                <img src="img-9.png" alt="grid2" style="width:100%">
+                <img src="img-3.png" alt="grid5" style="width:100%">
+                <img src="img-9.png" alt="grid1" style="width:100%">
+            </div>
+        </div>
+    </body>
+</html>

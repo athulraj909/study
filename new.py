@@ -24,6 +24,8 @@
 # emp.display()  
 
 
+
+
 # class Student:  
 #     def __init__(self):  
 #         print("The First Constructor")  
@@ -31,8 +33,6 @@
 #         print("The second constructor")  
   
 # st = Student() 
-
-
 
 
 
@@ -297,7 +297,7 @@
 # 	# __hiddenVariable 
 # 	def add(self, increment): 
 # 		self.__hiddenVariable += increment 
-# 		# print (self.__hiddenVariable) 
+# 		print (self.__hiddenVariable) 
 
 # # Driver code 
 # myObject = MyClass()	 
@@ -305,7 +305,7 @@
 # myObject.add(5) 
 
 # # This line causes error 
-# print (myObject.__hiddenVariable) 
+# print(myObject._MyClass__hiddenVariable)
 
 
 
@@ -354,7 +354,7 @@
 # 	def __init__(self): 
 # 		self.a = "hello"
 # 		self.__c = "world"
-# 		# print(self.__c)
+# 		print(self.__c)
 
 # class Derived(Base): 
 # 	def __init__(self): 
@@ -363,11 +363,12 @@
 # 		print("Calling private member of base class: ") 
 # 		print(self.__c) 
 
-# # Driver code 
+# # # Driver code 
 # obj1 = Base() 
-# # print(obj1.__c)
-# # print(obj1.a) 
-# # obj2=Derived()
+# print(obj1.__c)
+# print(obj1.a) 
+# obj2=Derived()
+# print(obj2.__c)
 # # Uncommenting print(obj1.c) will 
 # # raise an AttributeError 
 
@@ -531,7 +532,7 @@
 # customer_one = SilverCustomer(2,10,100)
 # print("Your bill amount is : ",customer_one.generate_bill())
 
-# customer_two = GoldCustomer(3,10,100)
+# customer_two = GoldCustomer(2,10,100)
 # print("Your bill amount is : ",customer_two.generate_bill())
 
 
@@ -674,70 +675,188 @@
 
 
 
-class Account:
-    def __init__(self, account_number, account_balance):
-        self.account_number = account_number
-        self.account_balance = account_balance
+# class Account:
+#     def __init__(self, account_number, account_balance):
+#         self.account_number = account_number
+#         self.account_balance = account_balance
 
-    def withdraw(self, amount):
-        if self.account_balance - amount >= 0:
-            self.account_balance -= amount
-            print("Your Account Balance is: ", self.account_balance)
-        else:
-            print("Insufficient balance")
+#     def withdraw(self, amount):
+#         if self.account_balance - amount >= 0:
+#             self.account_balance -= amount
+#             print("Your Account Balance is: ", self.account_balance)
+#         else:
+#             print("Insufficient balance")
 
-    def deposit(self, depo):
-        if depo > 0:
-            self.account_balance += depo
-            print("Your Account Balance is: ", self.account_balance)
+#     def deposit(self, depo):
+#         if depo > 0:
+#             self.account_balance += depo
+#             print("Your Account Balance is: ", self.account_balance)
 
-    def display(self):
-        print("Account Number: {}".format(self.account_number))
-        print("Account Balance: {}".format(self.account_balance))
+#     def display(self):
+#         print("Account Number: {}".format(self.account_number))
+#         print("Account Balance: {}".format(self.account_balance))
 
-# Create an empty dictionary to store multiple accounts
-accounts = {}
+# # Create an empty dictionary to store multiple accounts
+# accounts = {}
 
-while True:
-    print("\nChoose an action:")
-    print("1. Create Account")
-    print("2. Withdraw")
-    print("3. Deposit")
-    print("4. Display Account Info")
-    print("5. Exit")
+# while True:
+#     print("\nChoose an action:")
+#     print("1. Create Account")
+#     print("2. Withdraw")
+#     print("3. Deposit")
+#     print("4. Display Account Info")
+#     print("5. Exit")
 
-    choice = input("Enter your choice (1/2/3/4/5): ")
+#     choice = input("Enter your choice (1/2/3/4/5): ")
 
-    if choice == '1':
-        account_number = input("Enter account number: ")
-        initial_balance = float(input("Enter the initial balance: "))
-        new_account = Account(account_number, initial_balance)
-        accounts[account_number] = new_account
-        print("Account created successfully!")
-    elif choice == '2':
-        account_number = input("Enter account number: ")
-        amount = float(input("Enter the amount to withdraw: "))
-        if account_number in accounts:
-            accounts[account_number].withdraw(amount)
-        else:
-            print("Account not found.")
-    elif choice == '3':
-        account_number = input("Enter account number: ")
-        deposit_amount = float(input("Enter the amount to deposit: "))
-        if account_number in accounts:
-            accounts[account_number].deposit(deposit_amount)
-        else:
-            print("Account not found.")
-    elif choice == '4':
-        account_number = input("Enter account number: ")
-        if account_number in accounts:
-            accounts[account_number].display()
-        else:
-            print("Account not found.")
-    elif choice == '5':
-        break
-    else:
-        print("Invalid choice. Please choose a valid option.")
+#     if choice == '1':
+#         account_number = input("Enter account number: ")
+#         initial_balance = float(input("Enter the initial balance: "))
+#         new_account = Account(account_number, initial_balance)
+#         accounts[account_number] = new_account
+#         print("Account created successfully!")
+#     elif choice == '2':
+#         account_number = input("Enter account number: ")
+#         amount = float(input("Enter the amount to withdraw: "))
+#         if account_number in accounts:
+#             accounts[account_number].withdraw(amount)
+#         else:
+#             print("Account not found.")
+#     elif choice == '3':
+#         account_number = input("Enter account number: ")
+#         deposit_amount = float(input("Enter the amount to deposit: "))
+#         if account_number in accounts:
+#             accounts[account_number].deposit(deposit_amount)
+#         else:
+#             print("Account not found.")
+#     elif choice == '4':
+#         account_number = input("Enter account number: ")
+#         if account_number in accounts:
+#             accounts[account_number].display()
+#         else:
+#             print("Account not found.")
+#     elif choice == '5':
+#         break
+#     else:
+#         print("Invalid choice. Please choose a valid option.")
+
+
+
+
+
+
+# class Todolist:
+#     def __init__(self):
+#         self.tasks = []
+
+#     def add_task(self, task):
+#         self.tasks.append(task)
+#         print("Added task: ",task)
+
+#     def remove_task(self, task):
+#         if task in self.tasks:
+#             self.tasks.remove(task)
+#             print("Removed task: ",task)
+#         else:
+#             print("Task not found in the to-do list.")
+
+#     def show_tasks(self):
+#         if not self.tasks:
+#             print("No tasks in the to-do list.")
+#         else:
+#             print("To-Do List:")
+#             for index, task in enumerate(self.tasks, 1):
+#                 print("{}. {}".format(index,task))
+
+# to_do_list = Todolist()
+
+# while True:
+#     print("\nOptions:")
+#     print("1. Add Task")
+#     print("2. Remove Task")
+#     print("3. Show Tasks")
+#     print("4. Exit")
+#     choice = input("Enter your choice (1/2/3/4): ")
+
+#     if choice == '1':
+#         task = input("Enter the task: ")
+#         to_do_list.add_task(task)
+#     elif choice == '2':
+#         task = input("Enter the task to remove: ")
+#         to_do_list.remove_task(task)
+#     elif choice == '3':
+#         to_do_list.show_tasks()
+#     elif choice == '4':
+#         break
+#     else:
+#         print("Invalid choice. Please select a valid option.")
+
+
+
+
+
+
+
+# class Student:
+#     def __init__(self, name, roll_number):
+#         self.name = name
+#         self.roll_number = roll_number
+
+#     def display_info(self):
+#         print(f"Name: {self.name}")
+#         print(f"Roll Number: {self.roll_number}")
+
+# class StudentManagementSystem:
+#     def __init__(self):
+#         self.students = []
+
+#     def add_student(self, student):
+#         self.students.append(student)
+#         print(f"Added student: {student.name}")
+
+#     def remove_student(self, roll_number):
+#         for student in self.students:
+#             if student.roll_number == roll_number:
+#                 self.students.remove(student)
+#                 print(f"Removed student with Roll Number {roll_number}")
+#                 return
+#         print(f"Student with Roll Number {roll_number} not found.")
+
+#     def display_students(self):
+#         if not self.students:
+#             print("No students in the system.")
+#         else:
+#             print("Student List:")
+#             for student in self.students:
+#                 student.display_info()
+
+# student_system = StudentManagementSystem()
+
+# while True:
+#     print("\nOptions:")
+#     print("1. Add Student")
+#     print("2. Remove Student")
+#     print("3. Display Students")
+#     print("4. Exit")
+#     choice = input("Enter your choice (1/2/3/4): ")
+
+#     if choice == '4':
+#         break
+
+#     if choice == '1':
+#         name = input("Enter the student's name: ")
+#         roll_number = input("Enter the student's roll number: ")
+#         student = Student(name, roll_number)
+#         student_system.add_student(student)
+#     elif choice == '2':
+#         roll_number = input("Enter the student's roll number to remove: ")
+#         student_system.remove_student(roll_number)
+#     elif choice == '3':
+#         student_system.display_students()
+#     else:
+#         print("Invalid choice. Please select a valid option.")
+
+
 
 
 
@@ -883,8 +1002,8 @@ while True:
 # 	k = 5//0 # raises divide by zero exception. 
 # 	print(k) 
 # # handles zerodivision exception 
-# except ZeroDivisionError: 
-# 	print("Can't divide by zero") 
+# except Exception as e: 
+# 	print("Can't divide by zero",{e}) 
 # finally: 
 # 	# this block is always executed 
 # 	# regardless of exception generation. 
@@ -897,8 +1016,8 @@ while True:
 
 # try: 
 # 	raise NameError("Hi there") # Raise Error 
-# except NameError: 
-# 	print ("An exception") 
+# except Exception as e: 
+# 	print ("An exception",{e}) 
 # 	raise # To determine whether the exception was raised or not
 
 
@@ -919,6 +1038,258 @@ while True:
 
 # arr1 = np.array([[1,2,3,4],[4,5,9,10]]) 
 # print(arr1.shape)
+
+
+
+
+# arr1 = np.array([[1,2,3,4],[4,5,9,10]]) 
+# print(arr1.shape)
+
+
+
+
+# arr1 = np.array([[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]]])
+# print(arr1.shape)
+# print(arr1.ndim)
+# print(arr1.size)
+
+
+
+
+# arr1 = np.array([1,2,3,4,5,6])
+# print(arr1.dtype)
+
+
+
+# arr1 = np.array([1,2,3,4,5,6,'abc'])
+# print(arr1.dtype)
+
+
+
+# my_array = np.array(['abd','bcd','abc'])
+# print(my_array.dtype)
+
+
+
+
+# Question 2: Create a Python class called Rectangle with attributes 
+#             for length and width. Write a method to calculate the 
+#             area of the rectangle.
+
+# class Rectangle:
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+
+#     def calculate_area(self):
+#        return self.length * self.width
+
+# # Example usage:
+# a=float(input("enter the length : "))
+# b=float(input("enter th width : "))
+# my_rectangle = Rectangle(a,b)
+# area = my_rectangle.calculate_area()
+# print("Rectangle Area: {} square units".format(area))
+
+
+
+
+
+
+
+# Question: Write a Python program that uses classes to implement a
+#           simple menu-driven application. The program should include
+#           classes for a Circle, Person, and Book, each with specific 
+#           attributes and methods. The main part of the program should 
+#           provide the user with a menu to choose from different options, 
+#           such as calculating the properties of a circle, displaying person
+#           details, displaying book information, or exiting the program. 
+#           The user should be able to interact with the program by making choices
+#           from the menu.
+
+# Answer :
+
+# class Circle:
+#     def __init__(self, radius):
+#         self.radius = radius
+
+#     def calculate_area(self):
+#         return 3.14159265359 * self.radius ** 2
+
+#     def calculate_circumference(self):
+#         return 2 * 3.14159265359 * self.radius
+
+# class Person:
+#     def __init__(self, name, age, address):
+#         self.name = name
+#         self.age = age
+#         self.address = address
+
+#     def display_details(self):
+#         print(f"Name: {self.name}")
+#         print(f"Age: {self.age} years")
+#         print(f"Address: {self.address}")
+
+# class Book:
+#     def __init__(self, title, author, published_year):
+#         self.title = title
+#         self.author = author
+#         self.published_year = published_year
+
+#     def display_info(self):
+#         print(f"Title: {self.title}")
+#         print(f"Author: {self.author}")
+#         print(f"Published Year: {self.published_year}")
+
+# while True:
+#     print("\nOptions:")
+#     print("1. Calculate Circle")
+#     print("2. Display Person Details")
+#     print("3. Display Book Info")
+#     print("4. Exit")
+#     choice = input("Enter your choice (1/2/3/4): ")
+
+#     if choice == '4':
+#         break 
+
+#     if choice == '1':
+#         radius = float(input("Enter the circle's radius: "))
+#         my_circle = Circle(radius)
+#         area = my_circle.calculate_area()
+#         circumference = my_circle.calculate_circumference()
+#         print(f"Circle Area: {area} square units")
+#         print(f"Circle Circumference: {circumference} units")
+#     elif choice == '2':
+#         name = input("Enter the person's name: ")
+#         age = int(input("Enter the person's age: "))
+#         address = input("Enter the person's address: ")
+#         person1 = Person(name, age, address)
+#         person1.display_details()
+#     elif choice == '3':
+#         title = input("Enter the book's title: ")
+#         author = input("Enter the book's author: ")
+#         published_year = int(input("Enter the book's published year: "))
+#         book1 = Book(title, author, published_year)
+#         book1.display_info()
+#     else:
+#         print("Invalid choice. Please select a valid option.")
+
+
+
+
+
+
+
+
+# class Shop:
+#     def __init__(self, id, quantityitem, priceitem):
+#         self.id = id
+#         self.quantityitem = quantityitem
+#         self.priceitem = priceitem
+
+#     def gold(self):
+#         total = self.priceitem * self.quantityitem
+#         discount = total * 0.2
+#         finalprice = total - discount
+
+#         print(f"Price of an item: {total}")
+#         print(f"Discount for gold customer: {discount}")
+#         print(f"After discount: {finalprice}")
+
+#     def silver(self):
+#         total = self.priceitem * self.quantityitem
+#         discount = total * 0.1
+#         finalprice = total - discount
+
+#         print(f"Price of an item: {total}")
+#         print(f"Discount for silver customer: {discount}")
+#         print(f"After discount: {finalprice}")
+
+#     def exit(self):
+#         print("Thank you for using the Billing System. Goodbye!")
+#         exit()
+
+# while True:
+#     id = input("Enter your ID: ")
+#     quantityitem = int(input("Enter quantity item: "))
+#     priceitem = float(input("Enter price item: "))
+
+#     print("Welcome to the Billing System")
+#     print("1: Gold\n"
+#           "2: Silver\n"
+#           "3: Exit\n")
+#     choice = input("Choose your customer type: ")
+
+#     if choice == '3':
+#         print("Thank you for using the Billing System. Goodbye!")
+#         break
+#     elif choice == '1':
+#         shop = Shop(id, quantityitem, priceitem)
+#         shop.gold()
+#         while True:
+#             print("1: Yes\n"
+#                   "2: No\n")
+#             cont = input("Do you want to continue? : ")
+#             if cont == '2':
+#                 shop.exit()
+#             elif cont == '1':
+#                 break
+#     elif choice == '2':
+#         shop = Shop(id, quantityitem, priceitem)
+#         shop.silver()
+#         while True:
+#             print("1: Yes\n"
+#                   "2: No\n")
+#             cont = input("Do you want to continue? : ")
+#             if cont == '2':
+#                 shop.exit()
+#             elif cont == '1':
+#                 break
+#     else:
+#         print("Invalid choice. Please enter a valid option.")
+
+
+
+
+
+
+
+
+
+
+# n = 6  # Change this to the number of rows you want in the triangle
+# # Create the Pascal's triangle
+# pascal_triangle = []
+# for i in range(n):
+#     current_row = [1]
+#     if pascal_triangle:
+#         previous_row = pascal_triangle[-1]
+#         for j in range(len(previous_row) - 1):
+#             current_row.append(previous_row[j] + previous_row[j + 1])
+#         current_row.append(1)
+#     pascal_triangle.append(current_row)
+
+# # Find the maximum width for formatting
+# max_width = len(' '.join(map(str, pascal_triangle[-1])))
+
+# # Print the Pascal's triangle
+# for row in pascal_triangle:
+#     padding = max_width - len(' '.join(map(str, row)))
+#     formatted_row = ' '.join(str(item) for item in row)
+#     print(' ' * (padding // 2) + formatted_row + ' ' * (padding // 2))
+
+
+# ouput:
+
+
+# Pascal's triangle
+
+#       1      
+#      1 1     
+#     1 2 1
+#    1 3 3 1
+#   1 4 6 4 1
+# 1 5 10 10 5 1
 
 
 
